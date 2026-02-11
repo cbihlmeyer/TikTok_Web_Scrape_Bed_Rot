@@ -1,0 +1,31 @@
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.Rproj.user/
+.Rhistory
+.RData
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# R Markdown intermediates/outputs
+*.utf8.md
+*.knit.md
+_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data (keep sample only)
+data/processed/**
+data/raw/**
+!data/raw/tiktok_bedrot_sample.csv
+
+# Common exports
+*.ndjson
+*.jsonl
+*.log
