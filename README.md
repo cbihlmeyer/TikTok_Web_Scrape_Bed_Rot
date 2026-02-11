@@ -27,19 +27,57 @@ Learn how to scrape TikTok for transcripts, on-screen text, and post description
 
 ## Getting Started
 1. Clone the repo: `git clone https://github.com/<your-username>/<your-repo>.git`
-2. Install dependencies: `...`
-3. Run: `...`
+2. Install dependencies:
+   
+R (needed for the .Rmd files):
+
+``` install.packages(c("tidyverse","jsonlite","readr","stringr","stringi","rmarkdown"))```
+
+Python (needed for bed_rot_transcripts.py):
+
+```pip install --upgrade pandas openai-whisper torch```
+  
+3. Run:
+   
+```
+r/Bed Rot URL Extract.rmd
+
+r/Bed Rot Text Extraction.rmd
+
+python/bed_rot_transcripts.py
+```
+
+4. Outputs:
+   
+See sample in data/processed/.
+
+Full workflow: docs/WORKFLOW.md.
+
 
 ## Documentation
 
 - [Bed Rot TikTok Web Scrape Workflow](docs/WORKFLOW.md)
 
-## Usage
-Brief examples or commands to use the project.
-
 
 ## Contributing
 Pull requests welcome.
 
+## Citations & Acknowledgments
+
+This project uses the **Zeeschuimer** browser extension (Digital Methods Initiative, University of Amsterdam) to collect TikTok URLs and metadata. Please acknowledge and cite Zeeschuimer when using this repository or publishing results.
+
+**Recommended citation:**
+
+Peeters, S. (2025). *Zeeschuimer* (v1.13.4) [Software]. Zenodo. https://doi.org/10.5281/zenodo.18339720
+
+Project home: https://github.com/digitalmethodsinitiative/zeeschuimer
+
+> Note: This repository uses Zeeschuimer **outputs** only; no Zeeschuimer source code is redistributed here.
+
+---
+
 ## License
-This project is licensed under the <Your License>.
+
+- **This repository:** See the **LICENSE** file at the root of this repo for the license that applies to **all original code and documentation in this project**.
+- **Third‑party tools:** **Zeeschuimer** is licensed under the **Mozilla Public License 2.0 (MPL‑2.0)**. If you copy or adapt Zeeschuimer source code in the future, you must comply with MPL‑2.0 terms. This repository does **not** include Zeeschuimer code.
+
